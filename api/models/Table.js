@@ -6,14 +6,23 @@
  * @docs		:: http://sailsjs.org/#!documentation/models
  */
 
-module.exports = {
-
+var Table = {
   attributes: {
-  	
-  	/* e.g.
-  	nickname: 'string'
-  	*/
-    
-  }
+  	name: 	{
+  		type: 'STRING',
+  		required: true
+	}
 
+	columns: {
+		type: 'ARRAY',
+		required: true
+	}
+
+	indexes: {
+		type: 'ARRAY',
+		required: true
+	}
+  }
 };
+
+module.exports = Table;

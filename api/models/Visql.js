@@ -5,15 +5,22 @@
  * @description :: A short summary of how this model works and what it represents.
  * @docs		:: http://sailsjs.org/#!documentation/models
  */
-
-module.exports = {
+var ViSQL = {
 
   attributes: {
   	
-  	/* e.g.
-  	nickname: 'string'
-  	*/
+  	databases: {
+  		type: 'ARRAY',
+  		required: true
+  	}
+
+  	users: {
+  		type: 'ARRAY',
+  		required: true
+  	}
     
   }
 
 };
+
+module.exports = ViSQL;

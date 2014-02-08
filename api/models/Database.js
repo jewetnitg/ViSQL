@@ -12,6 +12,11 @@ var Database = {
   		type: 'STRING',
   		required: true
 	}
+
+	tables: {
+		type: 'ARRAY',
+		required: true
+	}
   }
 };
 
